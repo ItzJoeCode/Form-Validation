@@ -1,0 +1,140 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 2px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .name-labelninput {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-name {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .label-name {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .label-name label {
+    color: dimgrey;
+    font-size: small;
+  }
+
+  .required {
+    color: red;
+  }
+
+  #firstName, #lastName {
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.500);
+  }
+  
+  #email {
+    height: 40px;
+    width: auto;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.500);
+  }
+
+  #message {
+    height: 120px;
+    width: auto;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.500);
+  }
+
+  label {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .submit-btn {
+    cursor: pointer;
+    display: block;
+    width: 140px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: aliceblue;
+    background: blue;
+    box-shadow: 0 8px 8px 0 rgba(0, 17, 255, 0.568);
+    transition: color 0.3s, transform 0.3s;
+  }
+
+  .submit-btn.valid {
+    color: rgb(0, 255, 0);
+    transform: scale(1.1);
+  }
+
+  .submit-btn:not(.valid):hover {
+    color: red;
+  }
+  
+  .submit-btn:disabled {
+    cursor: not-allowed;
+  }
+  
